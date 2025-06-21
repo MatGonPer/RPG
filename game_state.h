@@ -7,6 +7,7 @@ typedef enum GameState {
     STATE_GAMEPLAY
 } GameState;
 
-extern GameState estado_atual;
+extern GameState atual_state;
+extern bool game_should_close;
 
 #endif // GAMESTATE

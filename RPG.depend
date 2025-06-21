@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1750472827 source:/home/matheus/Documentos/CWorkspace/RPG/menu.c
+1750538998 source:/home/matheus/Documentos/CWorkspace/RPG/menu.c
 	"config.h"
 	"game_state.h"
 	"menu.h"
@@ -9,7 +9,7 @@
 
 1750476969 /home/matheus/Documentos/CWorkspace/RPG/menu.h
 
-1750476841 source:/home/matheus/Documentos/CWorkspace/RPG/main.c
+1750539035 source:/home/matheus/Documentos/CWorkspace/RPG/main.c
 	<stdio.h>
 	<stdlib.h>
 	"raylib.h"
@@ -20,11 +20,11 @@
 
 1750470765 /home/matheus/Documentos/CWorkspace/RPG/gameplay.h
 
-1750474074 source:/home/matheus/Documentos/CWorkspace/RPG/gameplay.c
+1750535048 source:/home/matheus/Documentos/CWorkspace/RPG/gameplay.c
 	"game_state.h"
 	"gameplay.h"
 
-1750471110 /home/matheus/Documentos/CWorkspace/RPG/game_state.h
+1750538798 /home/matheus/Documentos/CWorkspace/RPG/game_state.h
 	"raylib.h"
 
 1750472274 /home/matheus/Documentos/CWorkspace/RPG/config.h

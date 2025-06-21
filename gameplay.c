@@ -3,7 +3,7 @@
 
 void UpdateGameplay(void) {
     if(IsKeyPressed(KEY_ESCAPE)) {
-        estado_atual = STATE_MENU;
+        atual_state = STATE_MENU;
     }
 }
 

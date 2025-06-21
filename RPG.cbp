@@ -34,7 +34,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="gameState.h" />
+		<Unit filename="game_state.h" />
 		<Unit filename="gameplay.c">
 			<Option compilerVar="CC" />
 		</Unit>

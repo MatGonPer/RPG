@@ -6,7 +6,8 @@
 #include "menu.h"
 #include "gameplay.h"
 
-GameState estado_atual;
+GameState atual_state;
+bool game_should_close = 0;
 
 int main(void) {
     //Configurações para a janela
@@ -20,12 +21,12 @@ int main(void) {
     InitMenu();
 
     //Estado inicial que o jogo se encontra
-    estado_atual = STATE_MENU;
+    atual_state = STATE_MENU;
 
     //Game loop
-    while(!WindowShouldClose()) {
+    while(!WindowShouldClose() && !game_should_close) {
         //Update
-        switch(estado_atual) {
+        switch(atual_state) {
             case STATE_MENU:
                 UpdateMenu();
                 break;
@@ -38,7 +39,7 @@ int main(void) {
 
         //Render
         BeginDrawing();
-        switch(estado_atual) {
+        switch(atual_state) {
             case STATE_MENU:
                 RenderMenu();
                 break;
