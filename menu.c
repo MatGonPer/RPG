@@ -5,8 +5,8 @@
 #define PLAY_BUTTON_WIDTH 125.0f
 #define EXIT_BUTTON_WIDTH 125.0f
 
-Texture2D play_button_texture;
-Texture2D exit_button_texture;
+static Texture2D play_button_texture;
+static Texture2D exit_button_texture;
 
 //Função para carregar os recursos do estado
 void InitMenu(void) {
@@ -29,10 +29,10 @@ void UpdateMenu(void) {
     float play_button_height = play_button_width * ((float)play_button_texture.height / (float)play_button_texture.width);
 
     Rectangle play_button_rec = {
-        .x = (SCREEN_WIDTH / 2.0f) - (play_button_width / 2.0f),
-        .y = (SCREEN_HEIGHT / 2.0f) - (play_button_height / 2.0f) + 50,
-        .width = play_button_width,
-        .height = play_button_height
+        (SCREEN_WIDTH / 2.0f) - (play_button_width / 2.0f),
+        (SCREEN_HEIGHT / 2.0f) - (play_button_height / 2.0f) + 50,
+        (float)play_button_width,
+        (float)play_button_height
     };
 
     //Checagem se o mouse clicou no botão play

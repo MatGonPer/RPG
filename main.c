@@ -20,6 +20,9 @@ int main(void) {
     //Carrega os recursos do estado menu
     InitMenu();
 
+    //Carrega os recursos do estado gameplay
+    InitGameplay();
+
     //Estado inicial que o jogo se encontra
     atual_state = STATE_MENU;
 
@@ -53,6 +56,7 @@ int main(void) {
     }
 
     UnloadMenu();
+    UnloadGameplay();
     CloseWindow();
 
     return 0;
