@@ -48,9 +48,6 @@ void RenderGameplay(void) {
     ClearBackground(BLACK);
 
     //Configura a câmera do jogo
-    //Camera2D camera = {0};
-    //camera.zoom = 1.0f;
-    //BeginMode2D(camera);
 
     //Percore o array onde está os tiles do mapa e desenha-os na tela
     for(int y = 0; y < MAP_HEIGHT_IN_TILES; y++) {
@@ -61,6 +58,4 @@ void RenderGameplay(void) {
             DrawTexturePro(tileset_texture, tileset_source, tileset_dest, (Vector2){0.0f, 0.0f}, 0.0f, WHITE);
         }
     }
-
-    //EndMode2D();
 }
